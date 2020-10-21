@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+
+    <TextView
+            android:text="da"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/post_da"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"/>
+    <TextView
+            android:text="da"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/post_dm"
+            android:layout_marginEnd="15dp" android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/post_da" app:layout_constraintBottom_toBottomOf="@+id/post_da"/>
+    <TextView
+            android:text="body"
+            android:textColor="@android:color/black"
+            android:maxLength="200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/post_body"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/post_da"
+            android:layout_marginLeft="15dp" android:layout_marginStart="15dp" android:layout_marginTop="15dp"/>
+</android.support.constraint.ConstraintLayout>
